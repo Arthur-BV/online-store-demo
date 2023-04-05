@@ -1,0 +1,56 @@
+.my_btn {
+    display: flex;
+    height: 40px;
+    flex-wrap: nowrap;
+    padding: 0 15px;
+    background: rgb(26, 131, 255);
+    border: 1px solid #0b89a8;
+    color: aliceblue;
+    border-radius: 15px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+    border-spacing: 2px;
+}
+
+.my_btn:disabled {
+    pointer-events: none;
+    background-color: dimgrey;
+    color: linen;
+    opacity: 1;
+    border: 1px solid dimgrey;
+}
+
+.my_btn:hover,
+.my_btn:active {
+    background: rgba(26, 131, 255, 0.5);
+}
+
+.btn__text,
+.btn__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 8px;
+    color: #fff;
+    height: 100%;
+}
+
+@font-face {
+    font-family: "linea-basic";
+    src: url("../../assests/fonts/linea-basic.eot");
+    src: url("../../assests/fonts/linea-basic.eot?#iefix") format("embedded-opentype"), 
+         url("../../assests/fonts/linea-basic.woff") format("woff"), 
+         url("../../assests/fonts/linea-basic.ttf") format("truetype"),
+         url("../../assests/fonts/linea-basic.svg#linea-basic") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-basic {
+    font-family: "linea-basic";
+    content: "B"; 
+}
