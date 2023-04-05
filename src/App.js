@@ -26,9 +26,6 @@ function App() {
                 <XButton>
                     <img src={logo} width="100" height={60} alt="my"/>
                 </XButton>
-                <XButton>
-                    <img src={logo} width="200" height={60} alt="my2"/>
-                </XButton>
             </header>
         </div>
     );
