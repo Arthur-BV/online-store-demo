@@ -1,6 +1,6 @@
-import logo from "./logo.svg";
+import logo from "./assets/images/logo.svg";
 import "./App.css"
-import XButton from "./componenst/Button/XButton";
+import XButton from "./components/Button/XButton";
 
 function App() {
     const handleClick = (props) => {
