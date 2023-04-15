@@ -23,9 +23,10 @@ function App() {
                 <XButton id="sample_btn" text="Sample Button" name="sample_btn"  clickHandler={() => handleClick('Sample Click!')} />
                 <br/>
                 <img src={logo} className="App-logo" alt="logo" width={300}  />
-                <XButton>
-                    <img src={logo} width="100" height={60} alt="my"/>
-                </XButton>
+                <br/>
+                <XButton id="btn_with_img" text="Image Button" name="image_btn" icon="icon-basic" />
+                <br/>
+                <span className="feature-box__icon icon-basic"></span>
             </header>
         </div>
     );

@@ -23,10 +23,9 @@ const Button = (props) => {
                 name={props.name}
                 value={props.value}
         >
-            <span className="button_text">{props.text}</span>
-            <span className="button_icon">
-                <i className={props.icon}></i>
-            </span>
+            <span className="btn_text">{props.text}</span>{' '}
+            <span className={`feature-box__icon ${props.icon}`}></span>
+            {/* <span className="btn__icon"><i className={`feature-box__icon ${props.icon}`}></i></span> */}
         </button>
     );
 };

@@ -1,3 +1,35 @@
+/* @font-face {
+    font-family: "linea-basic";
+    src: url("fonts/linea-basic.eot?#iefix") format("embedded-opentype");
+    src: url("fonts/linea-basic.eot?#iefix") format("embedded-opentype"), 
+         url("fonts/linea-basic.woff") format("woff"), 
+         url("fonts/linea-basic.ttf") format("truetype"),
+         url("fonts/linea-basic.svg#linea-basic") format("svg");
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* @font-face {
+    font-family: "Bitstream Vera Serif Bold";
+    src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");
+} */
+
+/* @font-face {
+	font-family: 'SansationLight';
+	src: url('../../assets/fonts/SansationLight.eot');
+	src: url('../../assets/fonts/SansationLight.woff') format('woff'), url('../../assets/fonts/SansationLight.ttf') format('truetype');
+} */
+@font-face {
+	font-family: 'SansationLight';
+	src: url('../../assets/fonts/linea-basic.eot');
+	src: url('../../assets/fonts/linea-basic.woff') format('woff'), url('../../assets/fonts/linea-basic.ttf') format('truetype');
+}
+
+.fontsforweb_fontid_423 {
+	font-family: 'SansationLight' !important;
+}
+
+
 .my_btn {
     display: flex;
     height: 40px;
@@ -39,7 +71,18 @@
     height: 100%;
 }
 
-.icon-basic {
-    font-family: "linea-basic";
-    content: "B"; 
+.icon-basic::before {
+    /* font-family: "linea-basic";
+    content: "\e029"; */
+    font-family: "SansationLight";
+    content: "Q";
+}
+
+.feature-box__icon {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #d56f6f, #b42828);
+    -webkit-background-clip: text;
+    color: #fff;
 }
