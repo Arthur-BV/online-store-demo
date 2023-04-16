@@ -1,6 +1,14 @@
 .header-main {
-    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 5px;
+    height: 100px;
     background-color: cadetblue;
+}
+
+.logo-place {
+    left: 0;
 }
 
 .dropbtn {

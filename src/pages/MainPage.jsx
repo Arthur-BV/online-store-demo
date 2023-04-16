@@ -1,6 +1,5 @@
 import React from "react";
 
-import Logo from "../assets/images/logo.svg";
 import XButton from "../components/Button/XButton";
 
 import "../assets/styles/main.css"
@@ -19,7 +18,6 @@ const MainPage = () => {
             <br />
             <XButton id="sample_btn" text="Sample Button" name="sample_btn" clickHandler={() => handleClick("Sample Click!")} />
             <br />
-            <img src={Logo} className="App-Logo" alt="Main Logo" />
             <br />
             <XButton id="btn_with_img" text="Image Button" name="image_btn" icon="icon-basic" />
             <br />
