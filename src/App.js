@@ -14,7 +14,7 @@ function App() {
 
     return (
         <div className="App">
-            <header className="App-header">
+            <header className="App-Header">
                 <br/>
                 <XButton id="login_btn" text="Login" name="login_btn" icon="icon-basic" clickHandler={() => handleClick('Login Click!')} />
                 <br/>
@@ -22,7 +22,7 @@ function App() {
                 <br/>
                 <XButton id="sample_btn" text="Sample Button" name="sample_btn"  clickHandler={() => handleClick('Sample Click!')} />
                 <br/>
-                <img src={logo} className="App-logo" alt="logo" width={300}  />
+                <img src={logo} className="App-Logo" alt="Main Logo"/>
                 <br/>
                 <XButton id="btn_with_img" text="Image Button" name="image_btn" icon="icon-basic" />
                 <br/>
