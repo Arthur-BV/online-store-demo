@@ -1,42 +1,15 @@
-/* @font-face {
-    font-family: "linea-basic";
-    src: url("fonts/linea-basic.eot?#iefix") format("embedded-opentype");
-    src: url("fonts/linea-basic.eot?#iefix") format("embedded-opentype"), 
-         url("fonts/linea-basic.woff") format("woff"), 
-         url("fonts/linea-basic.ttf") format("truetype"),
-         url("fonts/linea-basic.svg#linea-basic") format("svg");
-    font-weight: normal;
-    font-style: normal;
-} */
-
-/* @font-face {
-    font-family: "Bitstream Vera Serif Bold";
-    src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");
-} */
-
-/* @font-face {
-	font-family: 'SansationLight';
-	src: url('../../assets/fonts/SansationLight.eot');
-	src: url('../../assets/fonts/SansationLight.woff') format('woff'), url('../../assets/fonts/SansationLight.ttf') format('truetype');
-} */
 @font-face {
-	font-family: 'SansationLight';
+    font-family: 'SansationLight';
 	src: url('../../assets/fonts/linea-basic.eot');
 	src: url('../../assets/fonts/linea-basic.woff') format('woff'), url('../../assets/fonts/linea-basic.ttf') format('truetype');
 }
 
-.fontsforweb_fontid_423 {
-	font-family: 'SansationLight' !important;
-}
-
-
-.my_btn {
+.x_btn {
     display: flex;
     height: 40px;
     flex-wrap: nowrap;
     padding: 0 15px;
     background: rgb(26, 131, 255);
-    border: 1px solid #0b89a8;
     color: aliceblue;
     border-radius: 15px;
     overflow: hidden;
@@ -46,10 +19,11 @@
     justify-content: center;
     align-items: center;
 
+    border: 1px solid #9896bd;
     border-spacing: 2px;
 }
 
-.my_btn:disabled {
+.x_btn:disabled {
     pointer-events: none;
     background-color: dimgrey;
     color: linen;
@@ -57,32 +31,23 @@
     border: 1px solid dimgrey;
 }
 
-.my_btn:hover,
-.my_btn:active {
+.x_btn:hover,
+.x_btn:active {
     background: rgba(26, 131, 255, 0.5);
 }
 
-.btn__text,
-.btn__icon {
+.x_btn__text {
     display: inline-flex;
     align-items: center;
-    padding: 0 8px;
-    color: #fff;
-    height: 100%;
+    padding: 0 0px;
+    color: #dcdbeb;
+    height: 50px;
 }
 
-.icon-basic::before {
-    /* font-family: "linea-basic";
-    content: "\e029"; */
-    font-family: "SansationLight";
-    content: "Q";
-}
-
-.feature-box__icon {
-    font-size: 1.5rem;
-    margin-bottom: 0rem;
+.x_btn__text::before {
     display: inline-block;
-    background-image: linear-gradient(to right, #d56f6f, #b42828);
-    -webkit-background-clip: text;
-    color: #fff;
+    font-family: "SansationLight";
+    font-size: 1rem;
+    padding: 0 10px;
+    content: "!";
 }

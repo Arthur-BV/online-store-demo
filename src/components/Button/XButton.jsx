@@ -17,15 +17,13 @@ const Button = (props) => {
     return (
         <button type="button"
                 id={props.id} 
-                className={`my_btn ${btnEnableDisable}`} 
+                className={`x_btn ${btnEnableDisable}`} 
                 onClick={props.clickHandler}  
                 disabled={props.isDisabled}
                 name={props.name}
                 value={props.value}
         >
-            <span className="btn_text">{props.text}</span>{' '}
-            <span className={`feature-box__icon ${props.icon}`}></span>
-            {/* <span className="btn__icon"><i className={`feature-box__icon ${props.icon}`}></i></span> */}
+            <span className={`x_btn__text ${props.icon}`}>{props.text}</span>
         </button>
     );
 };
