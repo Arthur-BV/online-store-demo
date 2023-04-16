@@ -10,17 +10,6 @@
     animation-direction: alternate;
 }
 
-.App-Header {
-    background-color: #fffdf3;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
 @keyframes left-to-right {
     0% {
         transform: translateX(-50%);
