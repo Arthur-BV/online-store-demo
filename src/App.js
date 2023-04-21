@@ -1,7 +1,12 @@
 import "./App.css"
 import Header from "./layouts/Header/Header";
 import Footer from "./layouts/Footer/Footer";
+
 import MainPage from "./pages/MainPage";
+import Catalog from "./pages/Catalog";
+import Error404 from "./pages/Error404";
+import Contacts from "./pages/Contacts";
+import { Route, Routes } from "react-router-dom";
 
 const TITLE = "Online Shop, Demo";
 
@@ -13,11 +18,18 @@ function App() {
     // };
 
     return (
-        <div className="App">
+        <>
             <Header/>
-            <MainPage />
-            <Footer />
-        </div>
+            <Routes>
+                <Route path="/" element={<MainPage />}>
+                    {/* <Route index element={<MainPage />} /> */}
+                    <Route path="catalog" element={<Catalog />} />
+                    <Route path="contacts" element={<Contacts />} />
+                    <Route path="*" element={<Error404 />} />
+                </Route>
+            </Routes>
+            <Footer/>
+        </>
     );
 }
 
