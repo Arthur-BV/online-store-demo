@@ -21,12 +21,10 @@ function App() {
         <>
             <Header/>
             <Routes>
-                <Route path="/" element={<MainPage />}>
-                    {/* <Route index element={<MainPage />} /> */}
-                    <Route path="catalog" element={<Catalog />} />
-                    <Route path="contacts" element={<Contacts />} />
-                    <Route path="*" element={<Error404 />} />
-                </Route>
+                <Route path="/" element={<MainPage />} />
+                <Route path="catalog" element={<Catalog />} />
+                <Route path="contacts" element={<Contacts />} />
+                <Route path="*" element={<Error404 />} />
             </Routes>
             <Footer/>
         </>
